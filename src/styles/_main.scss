@@ -42,18 +42,22 @@ li.nav-list {
 }
 
 a {
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: $body-color;
     text-align: center;
     margin: 5px 0;
     display: block;
+    text-decoration: none;
+
 }
 
 .cart-number {
     text-align: center;
-    width: 20px;
-    height: 20px;
-    padding: 4px;
-    border-radius: 100%;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    border-radius: 50%;
     background-color:$green-color;
     color: $white-color;
 }
@@ -64,6 +68,13 @@ a {
     }
 }
 
+.search-area {
+    float: left;
+}
+
+img {
+    width: 300px;
+}
 //helpers
 .u-padding-right-1 {
     padding-right: 1rem;

@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
+
   title = 'IkonektTest';
    cartNumber = 0;
 
@@ -50,4 +51,18 @@ export class AppComponent {
       btn: 'Add to Wishlist',
     },
   ];
+
+  constructor() {}
+
+
+  ngOnInit() {
+  }
+
+  addtoCart(product) {
+  this.cartNumber +=  Number(product);
+  }
+
+  remove() {
+    this.cartNumber =  this.cartNumber === 0 ? 0 : this.cartNumber -= 1;
+  }
 }

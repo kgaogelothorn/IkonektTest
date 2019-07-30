@@ -107,7 +107,7 @@
                           <div class="o-desk-header__right">
                               <a href="https://www.onlineskinshop.co.za/feedback" class="button_enquiry">
                                   <img src="./assets/question_icon.png" alt="Question" data-pagespeed-url-hash="2290233426">
-                                  <span>Got A Question?</span>
+                                  <span>Got a question?</span>
                               </a>
                               <div class="slide_search">
                                   <form action="https://www.onlineskinshop.co.za/" method="get" id="search_form">
@@ -333,7 +333,7 @@
                                           <div class="woof_container_overlay_item"></div>
                                           <div class="woof_container_inner woof_container_inner_brand">
                                               <h4>Price</h4>
-                                              <div class="woof_block_html_items mCustomScrollbar _mCS_2 mCS_no_scrollbar _mCS_3" style=""><div id="mCSB_3" class="mCustomScrollBox mCS-dark mCSB_vertical mCSB_inside" tabindex="0" style="max-height: 60px;"><div id="mCSB_3_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+                                              <div class="woof_block_html_items mCustomScrollbar _mCS_2 mCS_no_scrollbar _mCS_3"><div id="mCSB_3" class="mCustomScrollBox mCS-dark mCSB_vertical mCSB_inside" tabindex="0" style="max-height: 60px;"><div id="mCSB_3_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
                                                   <div id="mCSB_2" class="mCustomScrollBox mCS-dark mCSB_vertical mCSB_inside" tabindex="0" style="max-height: 400px;">
                                                       <div id="mCSB_2_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
                                                           <ul class="woof_list woof_list_checkbox">
@@ -364,16 +364,17 @@
               <div class="container">
                   <div class="row product-grid">
                       <ul class="products">
-                          <li class="col-md-3 col-sm-6 product-single match-height" style="height: 424px;">
+                          <li *ngFor="let product of products" class="col-md-3 col-sm-6 product-single match-height" style="height: 424px;">
                               <article id="post-1436" class="post-1436 product type-product status-publish has-post-thumbnail product_cat-gift-vouchers product-brands-skin-store  instock downloadable virtual shipping-taxable purchasable product-type-gift-card" itemscope="" itemtype="http://schema.org/BlogPosting">
                                   <link itemprop="url" href="https://www.onlineskinshop.co.za/shop/skin-renewal-gift-voucher/">
-                                  <span class="price"><span class="woocommerce-Price-amount amount"><span class="currency"><span class="woocommerce-Price-currencySymbol">R</span></span>100.00</span>–<span class="woocommerce-Price-amount amount"><span class="currency"><span class="woocommerce-Price-currencySymbol">R</span></span>5,000.00</span>
+                                  <span class="price" *ngIf="product.priceTo && product.priceFrom" ><span class="woocommerce-Price-amount amount"><span class="currency"><span class="woocommerce-Price-currencySymbol">R</span></span>{{ product.priceFrom}}</span>–<span class="woocommerce-Price-amount amount"><span class="currency"><span class="woocommerce-Price-currencySymbol">R</span></span> {{product.priceTo}}</span>
                                   </span>
                                   <div class="entry-content" itemprop="articleBody">
-                                      <a href="https://www.onlineskinshop.co.za/shop/skin-renewal-gift-voucher/" rel="bookmark"><img width="300" height="300" src="assets/Skin-Renewal-Gift-Voucher-300x300.png" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="skin-renewal-gift-voucher" title="skin-renewal-gift-voucher" srcset="https://onlineskinshop-f38c.kxcdn.com//content/uploads/2016/11/Skin-Renewal-Gift-Voucher-300x300.png 300w, https://onlineskinshop-f38c.kxcdn.com//content/uploads/2016/11/Skin-Renewal-Gift-Voucher-150x150.png 150w, https://onlineskinshop-f38c.kxcdn.com//content/uploads/2016/11/Skin-Renewal-Gift-Voucher-100x100.png 100w, https://onlineskinshop-f38c.kxcdn.com//content/uploads/2016/11/Skin-Renewal-Gift-Voucher-180x180.png 180w, https://onlineskinshop-f38c.kxcdn.com//content/uploads/2016/11/Skin-Renewal-Gift-Voucher.png 397w" sizes="(max-width: 300px) 100vw, 300px" data-pagespeed-url-hash="3010386901"></a>
+                                      <a href="https://www.onlineskinshop.co.za/shop/skin-renewal-gift-voucher/" rel="bookmark"><img width="300" height="300" src="assets/{{product.image}}" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="{{product.name}}" title="{{product.name}}" srcset="https://onlineskinshop-f38c.kxcdn.com//content/uploads/2016/11/Skin-Renewal-Gift-Voucher-300x300.png 300w, https://onlineskinshop-f38c.kxcdn.com//content/uploads/2016/11/Skin-Renewal-Gift-Voucher-150x150.png 150w, https://onlineskinshop-f38c.kxcdn.com//content/uploads/2016/11/Skin-Renewal-Gift-Voucher-100x100.png 100w, https://onlineskinshop-f38c.kxcdn.com//content/uploads/2016/11/Skin-Renewal-Gift-Voucher-180x180.png 180w, https://onlineskinshop-f38c.kxcdn.com//content/uploads/2016/11/Skin-Renewal-Gift-Voucher.png 397w" sizes="(max-width: 300px) 100vw, 300px" data-pagespeed-url-hash="3010386901"></a>
                                       <a rel="nofollow" href="https://www.onlineskinshop.co.za/shop/skin-renewal-gift-voucher/" data-quantity="1" data-product_id="1436" data-product_sku="" class="ss product_list_item__add_to_cart">Add</a>
-                                      <span class="posted_in">Gift Vouchers</span>
-                                      <h1 class="product_list_item__name" itemprop="name headline"><a href="https://www.onlineskinshop.co.za/shop/skin-renewal-gift-voucher/" rel="bookmark">Skin Renewal Gift Voucher</a></h1>
+                                      <span *ngIf="product.postedin" class="posted_in">{{product.postedin}}</span>
+                                      <h1 *ngIf="product.name" class="product_list_item__name" itemprop="name headline"><a href="https://www.onlineskinshop.co.za/shop/skin-renewal-gift-voucher/" rel="bookmark">{{product.name}}</a></h1>
+                                      <img *ngIf="product.headlineImage" class="brand_logo" src="assets/{{product.headlineImage}}" title="{{product.headlineImage}}" alt="{{product.headlineImage}}" />
                                       <div class="rate-this-wrapper"></div>
                                       <div class="wishlist-add">
                                           <div class="yith-wcwl-add-to-wishlist add-to-wishlist-1436">
@@ -397,111 +398,8 @@
                                   </div>
                               </article>
                           </li>
-                          <li class="col-md-3 col-sm-6 product-single match-height" style="height: 424px;">
-                              <article id="post-598" class="post-598 product type-product status-publish has-post-thumbnail product_cat-daytime-active product-concerns-acne product-ingredients-copper-tripeptide product-ingredients-lactoferrin product-ingredients-nicotinamide product-ingredients-sodium-lactate product-brands-lamelle-clarity product-brands-lamelle product-warnings-excessive-sun-exposure-may-cause-irritation product-warnings-introduce-this-product-to-the-skin-slowly-build-up-use-over-time product-warnings-not-suitable-for-sensitive-skin-rosacea-prone-skin-or-those-with-eczema-or-psoriasis product-warnings-not-suitable-if-you-are-pregnant-or-breastfeeding product-skin-types-combination product-skin-types-normal-to-oily product-skin-conditions-acne-breakouts product-skin-conditions-ingrown-beard last instock shipping-taxable purchasable product-type-simple" itemscope="" itemtype="http://schema.org/BlogPosting">
-                                  <link itemprop="url" href="https://www.onlineskinshop.co.za/shop/lamelle-clarity-active-control/">
-                                  <span class="price"><span class="woocommerce-Price-amount amount"><span class="currency"><span class="woocommerce-Price-currencySymbol">R</span></span>130.00</span>
-                                  </span>
-                                  <div class="entry-content" itemprop="articleBody">
-                                      <a href="https://www.onlineskinshop.co.za/shop/lamelle-clarity-active-control/" rel="bookmark"><img width="300" height="300" src="./assets/Lamelle-Clarity-Active-Control-300x300.jpg" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="Lamelle Clarity Active Control" title="Lamelle-Clarity-Active-Control" srcset="https://onlineskinshop-f38c.kxcdn.com//content/uploads/2016/08/Lamelle-Clarity-Active-Control-300x300.jpg 300w, https://onlineskinshop-f38c.kxcdn.com//content/uploads/2016/08/Lamelle-Clarity-Active-Control-150x150.jpg 150w, https://onlineskinshop-f38c.kxcdn.com//content/uploads/2016/08/Lamelle-Clarity-Active-Control-100x100.jpg 100w, https://onlineskinshop-f38c.kxcdn.com//content/uploads/2016/08/Lamelle-Clarity-Active-Control-180x180.jpg 180w, https://onlineskinshop-f38c.kxcdn.com//content/uploads/2016/08/Lamelle-Clarity-Active-Control.jpg 397w" sizes="(max-width: 300px) 100vw, 300px" data-pagespeed-url-hash="3462313393"></a>
-                                      <a rel="nofollow" href="https://www.onlineskinshop.co.za/shop/?add-to-cart=598" data-quantity="1" data-product_id="598" data-product_sku="169" class="ss product_list_item__add_to_cart">Add</a>
-                                      <img class="brand_logo" src="./assets/lamelle.jpg" title="Lamelle" alt="Lamelle" data-pagespeed-url-hash="1900083610">
-
-                                      <div class="rate-this-wrapper"></div>
-                                      <div class="wishlist-add">
-                                          <div class="yith-wcwl-add-to-wishlist add-to-wishlist-598">
-                                              <div class="yith-wcwl-add-button show" style="display:block">
-                                                  <a href="https://www.onlineskinshop.co.za/shop/?add_to_wishlist=598" rel="nofollow" data-product-id="598" data-product-type="simple" class="add_to_wishlist single_add_to_wishlist">
-                                                      <i class="fa fa-heart"></i> Add to Wishlist</a>
-                                                  <img src="./assets/wpspin_light.gif" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden" data-pagespeed-url-hash="2164582213"></div>
-                                              <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
-                                                  <a href="https://www.onlineskinshop.co.za/wishlist/view/" rel="nofollow" class="button--green single_add_to_wishlist button alt">
-                                                      <i class="fa fa-heart"></i> Browse Wishlist </a>
-                                              </div>
-                                              <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
-                                                  <a href="https://www.onlineskinshop.co.za/wishlist/view/" rel="nofollow" class="button--green single_add_to_wishlist button alt">
-                                                      <i class="fa fa-heart"></i> Browse Wishlist </a>
-                                              </div>
-                                              <div style="clear:both"></div>
-                                              <div class="yith-wcwl-wishlistaddresponse"></div>
-                                          </div>
-                                          <div class="clear"></div>
-                                      </div>
-                                  </div>
-                              </article>
-                          </li>
-                          <li class="col-md-3 col-sm-6 product-single match-height" style="height: 424px;">
-                              <article id="post-8639" class="post-8639 product type-product status-publish has-post-thumbnail product_cat-oral-supplement product-ingredients-alpha-lipoic-acid product-brands-health-renewal product-warnings-keep-out-of-reach-of-children product-warnings-not-suitable-if-you-are-pregnant-or-breastfeeding  instock shipping-taxable purchasable product-type-simple" itemscope="" itemtype="http://schema.org/BlogPosting">
-                                  <link itemprop="url" href="https://www.onlineskinshop.co.za/shop/alpha-lipoic-acid/">
-                                  <span class="price"><span class="woocommerce-Price-amount amount"><span class="currency"><span class="woocommerce-Price-currencySymbol">R</span></span>175.00</span>
-                                  </span>
-                                  <div class="entry-content" itemprop="articleBody">
-                                      <a href="https://www.onlineskinshop.co.za/shop/alpha-lipoic-acid/" rel="bookmark"><img width="300" height="300" src="./assets/Alpha-Lipoic-Acid-300x300.jpg" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="Alpha Lipoic Acid" title="Alpha-Lipoic-Acid" srcset="https://onlineskinshop-f38c.kxcdn.com//content/uploads/2019/01/Alpha-Lipoic-Acid-300x300.jpg 300w, https://onlineskinshop-f38c.kxcdn.com//content/uploads/2019/01/Alpha-Lipoic-Acid-150x150.jpg 150w, https://onlineskinshop-f38c.kxcdn.com//content/uploads/2019/01/Alpha-Lipoic-Acid-100x100.jpg 100w, https://onlineskinshop-f38c.kxcdn.com//content/uploads/2019/01/Alpha-Lipoic-Acid-180x180.jpg 180w, https://onlineskinshop-f38c.kxcdn.com//content/uploads/2019/01/Alpha-Lipoic-Acid.jpg 397w" sizes="(max-width: 300px) 100vw, 300px" data-pagespeed-url-hash="3721908294"></a>
-                                      <a rel="nofollow" href="https://www.onlineskinshop.co.za/shop/?add-to-cart=8639" data-quantity="1" data-product_id="8639" data-product_sku="371" class="ss product_list_item__add_to_cart">Add</a>
-                                      <span class="posted_in">Oral Supplement</span>
-                                      <h1 class="product_list_item__name" itemprop="name headline"><a href="https://www.onlineskinshop.co.za/shop/alpha-lipoic-acid/" rel="bookmark">Alpha Lipoic Acid</a></h1>
-                                      <div class="wishlist-add">
-                                          <div class="yith-wcwl-add-to-wishlist add-to-wishlist-8639">
-                                              <div class="yith-wcwl-add-button show" style="display:block">
-                                                  <a href="https://www.onlineskinshop.co.za/shop/?add_to_wishlist=8639" rel="nofollow" data-product-id="8639" data-product-type="simple" class="add_to_wishlist single_add_to_wishlist">
-                                                      <i class="fa fa-heart"></i> Add to Wishlist</a>
-                                                  <img src="./assets/wpspin_light.gif" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden" data-pagespeed-url-hash="2164582213"></div>
-                                              <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
-                                                  <a href="https://www.onlineskinshop.co.za/wishlist/view/" rel="nofollow" class="button--green single_add_to_wishlist button alt">
-                                                      <i class="fa fa-heart"></i> Browse Wishlist </a>
-                                              </div>
-                                              <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
-                                                  <a href="https://www.onlineskinshop.co.za/wishlist/view/" rel="nofollow" class="button--green single_add_to_wishlist button alt">
-                                                      <i class="fa fa-heart"></i> Browse Wishlist </a>
-                                              </div>
-                                              <div style="clear:both"></div>
-                                              <div class="yith-wcwl-wishlistaddresponse"></div>
-                                          </div>
-                                          <div class="clear"></div>
-                                      </div>
-                                  </div>
-                              </article>
-                          </li>
-                          <li class="col-md-3 col-sm-6 product-single match-height" style="height: 424px;">
-                              <article id="post-8640" class="post-8640 product type-product status-publish has-post-thumbnail product_cat-oral-supplement product-ingredients-apple-cider-vinegar product-brands-health-renewal product-warnings-keep-out-of-reach-of-children product-warnings-not-suitable-if-you-are-pregnant-or-breastfeeding last instock shipping-taxable purchasable product-type-simple" itemscope="" itemtype="http://schema.org/BlogPosting">
-                                  <link itemprop="url" href="https://www.onlineskinshop.co.za/shop/apple-cider-vinegar/">
-                                  <span class="price"><span class="woocommerce-Price-amount amount"><span class="currency"><span class="woocommerce-Price-currencySymbol">R</span></span>175.00</span>
-                                  </span>
-                                  <div class="entry-content" itemprop="articleBody">
-                                      <a href="https://www.onlineskinshop.co.za/shop/apple-cider-vinegar/" rel="bookmark"><img width="300" height="300" src="./assets/Apple-Cider-Vineg0ar-300x30.jpg" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="Apple Cider Vinegar" title="Apple-Cider-Vinegar" srcset="https://onlineskinshop-f38c.kxcdn.com//content/uploads/2019/01/Apple-Cider-Vinegar-300x300.jpg 300w, https://onlineskinshop-f38c.kxcdn.com//content/uploads/2019/01/Apple-Cider-Vinegar-150x150.jpg 150w, https://onlineskinshop-f38c.kxcdn.com//content/uploads/2019/01/Apple-Cider-Vinegar-100x100.jpg 100w, https://onlineskinshop-f38c.kxcdn.com//content/uploads/2019/01/Apple-Cider-Vinegar-180x180.jpg 180w, https://onlineskinshop-f38c.kxcdn.com//content/uploads/2019/01/Apple-Cider-Vinegar.jpg 397w" sizes="(max-width: 300px) 100vw, 300px" data-pagespeed-url-hash="1211200478"></a>
-                                      <a rel="nofollow" href="https://www.onlineskinshop.co.za/shop/?add-to-cart=8640" data-quantity="1" data-product_id="8640" data-product_sku="374" class="ss product_list_item__add_to_cart">Add</a>
-                                      <span class="posted_in">Oral Supplement</span>
-                                      <h1 class="product_list_item__name" itemprop="name headline"><a href="https://www.onlineskinshop.co.za/shop/apple-cider-vinegar/" rel="bookmark">Apple Cider Vinegar</a></h1>
-                                      <div class="wishlist-add">
-                                          <div class="yith-wcwl-add-to-wishlist add-to-wishlist-8640">
-                                              <div class="yith-wcwl-add-button show" style="display:block">
-                                                  <a href="https://www.onlineskinshop.co.za/shop/?add_to_wishlist=8640" rel="nofollow" data-product-id="8640" data-product-type="simple" class="add_to_wishlist single_add_to_wishlist">
-                                                      <i class="fa fa-heart"></i> Add to Wishlist</a>
-                                                  <img src="./assets/wpspin_light.gif" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden" data-pagespeed-url-hash="2164582213"></div>
-                                              <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
-                                                  <a href="https://www.onlineskinshop.co.za/wishlist/view/" rel="nofollow" class="button--green single_add_to_wishlist button alt">
-                                                      <i class="fa fa-heart"></i> Browse Wishlist </a>
-                                              </div>
-                                              <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
-                                                  <a href="https://www.onlineskinshop.co.za/wishlist/view/" rel="nofollow" class="button--green single_add_to_wishlist button alt">
-                                                      <i class="fa fa-heart"></i> Browse Wishlist </a>
-                                              </div>
-                                              <div style="clear:both"></div>
-                                              <div class="yith-wcwl-wishlistaddresponse"></div>
-                                          </div>
-                                          <div class="clear"></div>
-                                      </div>
-                                  </div>
-                              </article>
-                          </li>
-
-
 
                       </ul>
-
-
-
-
 
                   </div>
               </div>

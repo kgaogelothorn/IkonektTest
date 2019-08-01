@@ -59,6 +59,7 @@ export class AppComponent implements OnInit{
   }
 
   addtoCart(product) {
+    // '1';
   this.cartNumber +=  Number(product);
   }
 

@@ -17302,7 +17302,7 @@ span.assessment-name {
     display: inline-block;
     font-size: 14px;
     line-height: 7px;
-    padding: 2px 0 0;
+    padding: 14px 0 0;
     width: 190px;
     float: right;
     font-weight: 700;
@@ -17325,6 +17325,9 @@ span.assessment-name {
     font-size: 14px;
     font-weight: 700;
     line-height: 8px
+}
+.button_enquiry img {
+    margin-top: -5px;
 }
 
 .full-package-wrapper {

@@ -77,9 +77,11 @@
                               </div>
                               <div class="o-desk-header__right">
 
-                                  <span><i class="fa fa-shopping-cart"></i></span>
+                                  <a  (click)="remove()" href="#" class="cart-link">
+                                      <i class="fa fa-shopping-cart padding-right-1rem"></i>
+                                      <!-- <img src="./assets/cart.png" alt="Cart"> -->
                                       <span> {{cartNumber}} </span>
-                                  
+                                  </a>
 
 
                               </div>
@@ -93,7 +95,7 @@
                               <div class="c-header-controls">
                                   <ul class="c-header-icons">
                                       <li>
-                                          <p href="#" class="c-header-icon c-header-icon--points">
+                                         <p href="#" class="c-header-icon c-header-icon--points">
                                               Earn loyalty points &amp; redeem discounts</p>
                                       </li>
                                       <li>
@@ -245,7 +247,7 @@
                                           <div class="woof_container_overlay_item"></div>
                                           <div class="woof_container_inner woof_container_inner_producttype">
                                               <h4>Product Type</h4>
-                                              <div class="woof_block_html_items mCustomScrollbar _mCS_1 mCS_no_scrollbar" style=""><div id="mCSB_1" class="mCustomScrollBox mCS-dark mCSB_vertical mCSB_inside" style="max-height: 120px;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+                                              <div class="woof_block_html_items mCustomScrollbar _mCS_1 mCS_no_scrollbar"><div id="mCSB_1" class="mCustomScrollBox mCS-dark mCSB_vertical mCSB_inside" style="max-height: 120px;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
                                                   <div id="mCSB_1" class="mCustomScrollBox mCS-dark mCSB_vertical mCSB_inside" style="max-height: 400px;" tabindex="0">
                                                       <div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
                                                           <ul class="woof_list woof_list_checkbox">
@@ -366,13 +368,29 @@
                           <li *ngFor="let product of products" class="col-md-3 col-sm-6 product-single match-height" style="height: 424px;">
                               <article id="post-1436" class="post-1436 product type-product status-publish has-post-thumbnail product_cat-gift-vouchers product-brands-skin-store  instock downloadable virtual shipping-taxable purchasable product-type-gift-card" itemscope="" itemtype="http://schema.org/BlogPosting">
                                   <link itemprop="url" href="https://www.onlineskinshop.co.za/shop/skin-renewal-gift-voucher/">
-                                  <span class="price" *ngIf="product.priceTo && product.priceFrom" ><span class="woocommerce-Price-amount amount"><span class="currency"><span class="woocommerce-Price-currencySymbol">R</span></span>{{ product.priceFrom}}</span>–<span class="woocommerce-Price-amount amount"><span class="currency"><span class="woocommerce-Price-currencySymbol">R</span></span> {{product.priceTo}}</span>
+                                  <span class="price" *ngIf="product.priceTo && product.priceFrom" >
+                                      <span class="woocommerce-Price-amount amount">
+                                          <span class="currency">
+                                              <span class="woocommerce-Price-currencySymbol">R</span>
+                                                </span>{{ product.priceFrom}}</span>
+                                                –
+                                                <span class="woocommerce-Price-amount amount">
+                                                    <span class="currency">
+                                                        <span class="woocommerce-Price-currencySymbol">R</span>
+                                                    </span> {{product.priceTo}}
+                                                </span>
                                   </span>
+                                  <span class="price" *ngIf="product.price">
                                   <span class="woocommerce-Price-amount amount" *ngIf="product.price">
-                                      <span class="currency"><span class="woocommerce-Price-currencySymbol">R</span></span>{{product.price}}</span>
+                                      <span class="currency">
+                                          <span class="woocommerce-Price-currencySymbol">R</span>
+                                        </span>
+                                        {{product.price}}
+                                    </span>
+                                </span>
                                   <div class="entry-content" itemprop="articleBody">
                                       <a href="" rel="bookmark"><img width="300" height="300" src="assets/{{product.image}}" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="{{product.name}}" title="{{product.name}}" ></a>
-                                      <a href="#" rel="nofollow" (click)="addtoCart('1')" class="ss product_list_item__add_to_cart">Add</a>
+                                      <a rel="nofollow" (click)="addtoCart('1')" class="ss product_list_item__add_to_cart">Add</a>
                                       <span *ngIf="product.postedin" class="posted_in">{{product.postedin}}</span>
                                       <h1 *ngIf="product.name" class="product_list_item__name" itemprop="name headline"><a href="https://www.onlineskinshop.co.za/shop/skin-renewal-gift-voucher/" rel="bookmark">{{product.name}}</a></h1>
                                       <img *ngIf="product.headlineImage" class="brand_logo" src="assets/{{product.headlineImage}}" title="{{product.headlineImage}}" alt="{{product.headlineImage}}" />
